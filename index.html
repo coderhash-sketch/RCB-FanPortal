@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB Fan Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: radial-gradient(circle at 50% -10%, #D1AB3E 0%, #FF6B00 15%, #D5152C 45%, #1a0505 100%);
+            background-attachment: fixed;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a0505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF6B00;
+            border-radius: 4px;
+        }
+        .glass-panel {
+            background: rgba(26, 5, 5, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(209, 171, 62, 0.25);
+            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 107, 0, 0.05);
+        }
+        .text-glow-red {
+            text-shadow: 0 0 10px rgba(255, 107, 0, 0.4);
+        }
+        .text-glow-gold {
+            text-shadow: 0 0 15px rgba(209, 171, 62, 0.6);
+        }
+
+        /* Neonic Rainbow Animation - Intensified for Sidebar */
+        @keyframes neonic-rainbow {
+            0% { color: #ff00ff; text-shadow: 0 0 12px #ff00ff; }
+            20% { color: #00ffff; text-shadow: 0 0 12px #00ffff; }
+            40% { color: #39ff14; text-shadow: 0 0 12px #39ff14; }
+            60% { color: #ffff00; text-shadow: 0 0 12px #ffff00; }
+            80% { color: #ff6b00; text-shadow: 0 0 12px #ff6b00; }
+            100% { color: #ff00ff; text-shadow: 0 0 12px #ff00ff; }
+        }
+
+        .neonic-active {
+            animation: neonic-rainbow 3s linear infinite !important;
+            font-weight: 900 !important;
+            opacity: 1 !important;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-white overflow-x-hidden">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

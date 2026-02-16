@@ -1,0 +1,7 @@
+{
+  "name": "RCB Fan Portal - The 12th Man",
+  "description": "An immersive digital home for Royal Challengers Bengaluru fans featuring player stats, custom jersey generation, trivia, and a dream XI builder.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
